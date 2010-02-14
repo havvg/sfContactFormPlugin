@@ -1,0 +1,26 @@
+sfContactForm plugin
+========================
+
+The `sfContactForm` is a symfony plugin that provides a basic contact form.
+In addition a decorator is given, to modify the resulting subject and message of
+the contact data sent from the form.
+
+Configuration
+-----
+
+You have to set up two email addresses in the settings.yml
+
+    contactformplugin_from: contact@example.com
+    contactformplugin_mail: me@example.com
+    
+The first one is the address all recipients will see and reply to.
+The second address is a recipient that will be added in addition to all recipients.
+
+Both addresses are required.
+If not given the plugin will throw an InvalidArgumentException.
+    
+License
+-------
+
+For detailed license information please view the LICENSE file and the included
+license information of all libraries.
